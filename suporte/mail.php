@@ -17,12 +17,13 @@ $enviou =   mail("renan.cunha20@gmail.com",
 if ($enviou)
 {
  echo "<script>javascript:alert('Email enviado!')</script>";
- echo "<script>javascript:location.href='http://renancunha33.com.br/suporte/index.html'</script>";
+ echo "<script>javascript:location.href='https://renancunha33.github.io/suporte'</script>";
 }
 else
 {
  echo "<script language=javascript>";
  echo "alert ('Erro,email nao enviado')";
  echo "</script>";
+ echo "<script>javascript:location.href='https://renancunha33.github.io/suporte'</script>";
 }
 ?>	

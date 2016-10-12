@@ -22,10 +22,10 @@
 		.navbar{
 			color:#001434;
 		}
+
 		#cor{
 			color:#90CAF9;
 		}
-		
 	</style>
 </head>
 <body>
@@ -61,8 +61,8 @@
 
 	<h5><b>Trabalhar no ramo de T.I. Como analista ou desenvolvedor de sistemas(de preferência web ou mobile). Tenho muito interesse em aprender mais sobre novas tecnologias de programação e sistemas operacionais (Windows, Linux e Unix).</h5></b>
 
-	<ul class="nav nav-tabs">
-		<li><a href="#" class="tablinks" onclick="openCity(event, 'prof')">Histórico profissional</a></li>
+	<ul class="nav nav-pills">
+		<li><a id="principal" href="#" class="tablinks" onclick="openCity(event, 'prof')">Histórico profissional</a></li>
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'escola')">Histórico Escolar</a></li>
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'cursos')">Cursos</a></li>
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'tec')">Experiências Técnicas</a></li>
@@ -161,6 +161,11 @@
 					<br/>
 				</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<script type="text/javascript">
+				$( document ).ready(function() {
+					$('.nav-pills a[id="principal"]')[0].click();
+				});
+			</script>
 				<script src="js/bootstrap.min.js"></script>
 			</body>
 			<br/>
@@ -170,6 +175,7 @@
 					<p><font id="cor">by Renan Cunha/2016</font></p>
 				</div>
 			</footer>
+			
 			<script type="text/javascript">
 				function openCity(evt, cityName) {
     // Declare all variables

@@ -7,7 +7,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<style type="text/css">
 		body {
-			background-color: #90CAF9;
+			background-color: #ccefff;
 		}
 		footer {
 			position:fixed;
@@ -26,11 +26,25 @@
 		#cor{
 			color:#90CAF9;
 		}
+		#exTab3 .tab-content {
+  background-color: #EEEEEE;
+  padding : 5px 15px;
+   border: 1px solid;
+    border-radius: 25px;
+}
+#exTab3 .tablinks {
+  border: 1px ;
+  border-radius: 5px;
+}
+.img-circle{
+ border: 2px solid;
+}
+
 	</style>
 </head>
-<body>
+<body >
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+		<div class="container hidden">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -45,6 +59,7 @@
 					<li><a href="https://github.com/renancunha33" target="_blank">GitHub</a></li>
 					<li><a href="https://www.youtube.com/user/mrrcunha33" target="_blank">YouTube</a></li>
 					<li><a href="https://br.linkedin.com/pub/renan-cunha/70/a11/31" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/renancunha33/" target="_blank">Instagram</a></li>
 					<!--li><a href="suporte/index.html" target="_blank">Suporte técnico</a></li-->
 					<li><a href="curriculo.pdf" target="_blank">Currículo.pdf</a></li>
 					<!--li><a href="resume.pdf" target="_blank">Resume.pdf (EN)</a></li-->
@@ -53,12 +68,32 @@
 			</ul>
 		</div>
 	</div>
-</nav><br>
+</nav>
+<br>
+<br> 
+<div class="container hidden">
+<br> <br> 
+<div class="row">
+				<div class="col-md-3 ">
+				<img class="img-circle" src="renan.JPG" height="230" width="230">
+				</div>
+				<div class="col-md-9 ">
+				<h2><b> Sobre mim</b> </h2> 
+					<p>Nascido em 1993, em Santos/SP. Vivo em Cubatão/SP até os dias de hoje.
+Pratiquei judô por 13 anos, além disso também me aventurei por outros esportes, tais como: Jiu-jitsu, futsal, futebol americano, xadrês e etc. Devo mencionar também que sou um entusiasta do cubo-mágico e demais <i>puzzles</i>, tanto que já participei de competições e tenho um canal no youtube dedicado somente a isso.</p>
+<p>Tenho um excelente lado criativo e artístico(exceto para desenhar), tanto que como <i>hobby</i> eu faço produção e edição de vídeos, fotografia, edição de áudio, mixagens... Também sei tocar alguns instrumentos musicais, como violão, guitarra e contrabaixo.</p>
+<p>Atualmente estou me focando em desenvolver minha habilidades na área de TI e estou a procura de novas oportunidades que sejam boas para mim e para os outros envolvidos(físicos ou jurídicos).</p>
+<p><b><i>Caso queria contratar serviços de TI ou de edição, favor ir na aba "contatos"</i></b></p>				
+				</div>
+			</div>
+
 <center>
-</center> <br> <br> 
-<div class="container">
-	<h4><b>	Objetivo Profissional:</b> </h4> 
-	<h5><b>Trabalhar no ramo de T.I. Como analista ou desenvolvedor de sistemas(de preferência web ou mobile). Tenho muito interesse em aprender mais sobre novas tecnologias de programação e sistemas operacionais (Windows, Linux e Unix).</h5></b>
+
+</center>
+
+<center><h2><b>Currículo</b> </h2> </center>
+	
+	<div id="exTab3" class="container">
 	<ul class="nav nav-pills">
 		<li><a id="principal" href="#" class="tablinks" onclick="openCity(event, 'prof')">Histórico profissional</a></li>
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'escola')">Histórico Escolar</a></li>
@@ -68,7 +103,9 @@
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'aptidoes')">Resumo de aptidões</a></li>
 		<li><a href="#" class="tablinks" onclick="openCity(event, 'contato')">Contatos</a></li>
 	</ul>
-	<div id="prof" class="tabcontent">
+	<div id="prof" class="tab-content">
+	<h4><b>	Objetivo Profissional:</b> </h4> 
+	<h5>Trabalhar no ramo de T.I. Como analista ou desenvolvedor de sistemas(de preferência web ou mobile). Tenho muito interesse em aprender mais sobre novas tecnologias de programação e sistemas operacionais (Windows, Linux e Unix).</h5>
 		<h4><b>  Histórico profissional:</b> </h4> 
 
 		<ul class="list-group">
@@ -79,7 +116,7 @@
 			<li class="list-group-item">• <b>Instrutor particular de informática Básica para a 3ª idade</b><br/> (Janeiro/2012 à Julho/2012)</li>
 			<li class="list-group-item">• <b>Técnico em Informática Autônomo</b> <br/>(Junho de 2011 à atualmente)</li> </ul>
 		</div>
-		<div id="escola" class="tabcontent">
+		<div id="escola" class="tab-content">
 			<h4><b>	Histórico Escolar:</b> </h4> 
 			<ul class="list-group">
 				<li class="list-group-item">• <b>Ensino médio Completo(de 1° a 3° ano)</b>: ETEC de Cubatão <br/>(Conclusão: Dez/2010)
@@ -88,7 +125,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="cursos" class="tabcontent">
+		<div id="cursos" class="tab-content">
 			<h4><b>	Cursos:</b></h4> 
 
 			<ul class="list-group">
@@ -100,7 +137,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="tec" class="tabcontent">
+		<div id="tec" class="tab-content">
 			<h4><b>	Experiências Técnicas:</b> </h4> 
 
 			<ul class="list-group">
@@ -117,13 +154,13 @@
 
 			</ul>
 		</div>
-		<div id="int" class="tabcontent">
+		<div id="int" class="tab-content">
 			<h4><b>	Experiências internacionais:</b> </h4> 
 
 			<ul class="list-group">
 				<li class="list-group-item">• <b>Canadá (de 6/10/2011 a 16/10/2011)</b> – Intercâmbio esportivo/cultural para treinamento de Judo e disputa do “Quebec Open”.</li></ul> 
 			</div> 
-			<div id="aptidoes" class="tabcontent">
+			<div id="aptidoes" class="tab-content">
 				<h4><b>	Resumo de aptidões:</b> </h4> 
 
 				<ul class="list-group">
@@ -137,7 +174,7 @@
 						<li class="list-group-item">• Inglês avançado;</li>
 						<li class="list-group-item">• Profissionalismo, disciplina e Respeito;</li></ul>
 					</div>  
-					<div id="contato" class="tabcontent">
+					<div id="contato" class="tab-content">
 						<!--a id="contact"> </a-->
 						<h4><b> Contatos:</b></h4> 
 						<ul  class="list-group">
@@ -156,12 +193,14 @@
 							</li>
 						</ul>
 					</div>
+					</div>
 					<br/>
 					<br/>
 				</div>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 				<script type="text/javascript">
 				$( document ).ready(function() {
+				 $('div.hidden').fadeIn(1000).removeClass('hidden');
 					$('.nav-pills a[id="principal"]')[0].click();
 				});
 			</script>
@@ -180,7 +219,7 @@
     // Declare all variables
     var i, tabcontent, tablinks;
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
     	tabcontent[i].style.display = "none";
     }
